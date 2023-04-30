@@ -6,10 +6,11 @@ import user from '../components/Profile/user.json';
 import data from '../components/Statistics/data.json';
 import friends from '../components/FriendList/friends.json';
 import transactions from '../components/TransactionHistory/transactions.json';
+import css from './App.module.css'
 
 export const App = () => {
   return (
-    <div>
+    <div className={css.container}>
     <div><Profile
   username={user.username}
   tag={user.tag}
